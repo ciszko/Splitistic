@@ -8,7 +8,7 @@ W momencie gdy dzieli się mieszkanie zdarzają  się zakupy, które trzeba wyko
 
  - /login/ - autoryzacja użytkowników
  - /zakup/
-	 -  POST 
+	 -  POST - dodanie nowego zakupu
 
     ```
     {
@@ -23,7 +23,7 @@ W momencie gdy dzieli się mieszkanie zdarzają  się zakupy, które trzeba wyko
 	    ]
     }
     ```
-    - GET - purchase list
+    - GET - lista wszystkich zakupów
 	```
 	[
 		{
