@@ -1,4 +1,9 @@
+
 # Splitistic
+
+API wykonane z wykorzystaniem Django Rest Framework.
+W momencie gdy dzieli się mieszkanie zdarzają  się zakupy, które trzeba wykonać dla wszystkich. Po kilku takich zakupach traci się rachubę kto jest komu winien ile pieniędzy. Tutaj z pomocą przychodzi Splitistic. API pozwala na wprowadzanie danych dotyczących zakupów takich jak, cena oraz dla kogo zostały one zrobione. Dzięki czemu, potem przy użyciu jednego żądania wszystkie problemy z tym kto ma komu oddać ile pieniędzy zostaną natychmiast rozwiązane. 
+
 ## API Requests
 
  - /login/ - autoryzacja użytkowników
