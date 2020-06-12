@@ -226,7 +226,6 @@ class GraphView(APIView):
 				best_row = perm
 				best_accu = accu
 				smallest = sum
-				
 		# najlepsza kolejnosc
 		best_order = []
 		# znajdz ile transakcji mozna pominac
@@ -356,11 +355,11 @@ class GraphView(APIView):
 			}
 			]
 
-		print(f"{best_order} order")
-		print(f'{pay_to_n} pay_to_n')
-		print(f'{pays_to} pays_to')
-		print(f'{amount} amount')
-		print(f'{best_accu} accu')
+		# print(f"{best_order} order")
+		# print(f'{pay_to_n} pay_to_n')
+		# print(f'{pays_to} pays_to')
+		# print(f'{amount} amount')
+		# print(f'{best_accu} accu')
 		# uzupelnij koncowa liste poprawnie
 		for i, guy in enumerate(best_order):
 			final[guy - 1]["kto"] = guy

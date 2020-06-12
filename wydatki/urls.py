@@ -2,12 +2,12 @@ from django.urls import path, include
 from . import views
 from rest_framework import routers
 from django.conf.urls import url, include
-
-
+ 
+ 
 router = routers.DefaultRouter()
 router.register('zakup', views.ZakupView)
 router.register('uzytkownik', views.UzytkownikView)
-
+ 
 urlpatterns = [
     path('', include(router.urls)),
     url(r'^graph/$', views.GraphView.as_view()),

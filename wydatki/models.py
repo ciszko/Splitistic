@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.core.validators import MaxValueValidator, MinValueValidator
 
 # Create your models here.
 
@@ -14,7 +15,7 @@ class Uzytkownik(models.Model):
 class Zakup(models.Model):
     data = models.DateTimeField(auto_now_add=True)
     opis = models.CharField(max_length=150, blank=True, default='')
-    cena = models.IntegerField()
+    cena = models.IntegerField(validators=[MaxValueValidator(10000000), MinValueValidator(1)])
     # pola kto_kupil oraz dla_kogo sa w relacji z konkretnymi uzytkownikami
     kto_kupil = models.ForeignKey(Uzytkownik, on_delete=models.CASCADE, related_name="zakupy")
     dla_kogo = models.ManyToManyField(Uzytkownik, related_name="dla_kogo", blank=True)
